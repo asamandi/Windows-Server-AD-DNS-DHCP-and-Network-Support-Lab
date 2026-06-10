@@ -1,0 +1,39 @@
+Shared Folder Configuration
+
+Server:
+DC1
+
+Folder Path:
+C:\CompanyShare
+
+Share Name:
+CompanyShare
+
+Network Path:
+\\DC1\CompanyShare
+
+Access Group:
+Shared-Folder-Access
+
+Share Permissions:
+Read
+Change
+
+NTFS Permissions:
+Modify
+Read & Execute
+List Folder Contents
+Read
+Write
+
+Purpose:
+This shared folder was configured to test domain user access to network resources using Active Directory security groups.
+
+Network Support Note:
+If a user cannot access a shared folder, check:
+Network connectivity
+DNS resolution
+Share permissions
+NTFS permissions
+Group membership
+Domain login status

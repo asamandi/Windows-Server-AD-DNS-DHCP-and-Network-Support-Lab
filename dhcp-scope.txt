@@ -1,0 +1,30 @@
+DHCP Scope Configuration
+
+DHCP Server: DC1
+
+Scope Name: Office-LAN-Scope
+
+Network: 192.168.10.0/24
+
+DHCP Range:
+192.168.10.100 - 192.168.10.200
+
+Default Gateway:
+192.168.10.1
+
+DNS Server:
+192.168.10.10
+
+DNS Domain:
+amir.local
+
+Purpose:
+This DHCP scope automatically assigns IP addresses to client computers in the lab network.
+
+Network Technician Note:
+If a client receives an APIPA address such as 169.254.x.x, DHCP is not working correctly.
+
+Useful commands:
+ipconfig /release
+ipconfig /renew
+ipconfig /all

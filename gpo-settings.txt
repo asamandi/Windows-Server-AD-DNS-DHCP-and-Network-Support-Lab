@@ -1,0 +1,36 @@
+Group Policy Configuration
+
+Domain:
+amir.local
+
+GPO Name:
+Workstation Security Policy
+
+Linked OU:
+Workstations
+
+Target Computer:
+PC1
+
+Configured Settings:
+
+1. Prohibit access to Control Panel and PC settings
+Status: Enabled
+
+2. Minimum password length
+Value: 8
+
+3. Password complexity
+Status: Enabled
+
+Purpose:
+This Group Policy was configured to practice basic workstation policy management in a Windows domain environment.
+
+Network Support Note:
+If Group Policy does not apply, check:
+- PC1 is in the correct OU
+- GPO is linked to the correct OU
+- DNS is working
+- PC1 can reach DC1
+- Run gpupdate /force
+- Run gpresult /r

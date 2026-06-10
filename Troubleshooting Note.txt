@@ -1,0 +1,43 @@
+Problem:
+Group Policy was not applying to the user.
+
+Root Cause:
+The GPO contained User Configuration settings, but it was linked only to the Workstations OU. The user ali.it was located in the IT OU.
+
+Fix:
+Linked the Workstation Security Policy GPO to the IT OU.
+
+Verification:
+Ran gpupdate /force and gpresult /r on PC1. The GPO appeared under Applied Group Policy Objects.
+
+--------------------------------------------------------------------------------------
+
+Password Reset Test
+
+User:
+ali.it
+
+Action:
+Reset the user password in Active Directory Users and Computers.
+
+Result:
+The user successfully logged in from PC1 using the new password.
+
+Skill Demonstrated:
+Basic Active Directory user account support and login troubleshooting.
+
+--------------------------------------------------------------------------------------
+
+Disable and Enable User Account Test
+
+User:
+mike.sales
+
+Action:
+Disabled the account, tested login failure, then enabled the account again.
+
+Result:
+The disabled account could not log in. After re-enabling the account, login worked successfully.
+
+Skill Demonstrated:
+User access troubleshooting and account lifecycle management.
