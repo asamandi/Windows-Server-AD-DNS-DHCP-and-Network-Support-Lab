@@ -1,0 +1,21 @@
+DNS Configuration Notes
+
+Domain: amir.local
+
+DNS Server: DC1
+
+DNS Server IP: 192.168.10.10
+
+Forward Lookup Zone: amir.local
+
+Purpose:
+
+DNS allows domain clients to locate the domain controller and resolve internal names such as DC1 and amir.local.
+
+Network Technician Note:
+
+If a client cannot join the domain, DNS is one of the first things to check.
+
+Important command:
+
+nslookup amir.local

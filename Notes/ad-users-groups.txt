@@ -1,0 +1,53 @@
+Active Directory Security Groups Created
+
+Domain: amir.local
+
+Groups:
+
+IT-Admins
+Purpose: Group for IT department users.
+Members:
+ali.it
+sara.admin
+
+HR-Users
+Purpose: Group for HR department users.
+Members:
+john.hr
+
+Sales-Users
+Purpose: Group for Sales department users.
+Members:
+mike.sales
+
+Shared-Folder-Access
+Purpose: Group used to control access to the shared folder.
+Members:
+ali.it
+john.hr
+mike.sales
+
+Network Support Note:
+Using security groups makes permission management easier and safer. Instead of giving folder access to each user individually, permissions are assigned to a group.
+
+------------------------------------------------------------------------------
+
+Computer Object Organization
+
+Computer Name:
+PC1
+
+Original Location:
+Computers container
+
+New Location:
+Workstations OU
+
+Purpose:
+PC1 was moved to the Workstations OU so workstation-based Group Policy settings can be applied and tested.
+
+Network Support Note:
+In a real domain environment, moving computers to the correct OU helps organize devices and apply the correct policies.
+
+--------------------------------------------------------------------------------
+
